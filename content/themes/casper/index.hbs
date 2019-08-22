@@ -1,9 +1,8 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
-
-{{> header background=@site.cover_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
-    <div class="inner">
+ {{!--Special header.hbs partial to generate the <header> tag--}}
+    <div class="">
         <div class="site-header-content">
             <h1 class="site-title">
                 {{#if @site.logo}}
@@ -12,10 +11,16 @@ into the {body} of the default.hbs template --}}
                     {{@site.title}}
                 {{/if}}
             </h1>
-            <h2 class="site-description">{{@site.description}}</h2>
+               {{> "site-nav"}}
+
         </div>
-        {{> "site-nav"}}
+      <!--  {{> "site-nav"}} -->
+
+
     </div>
+          {{> header background=@site.cover_image}}
+            <h2 class="site-description">{{@site.description}}</h2>
+
 </header>
 
 {{!-- The main content area --}}
