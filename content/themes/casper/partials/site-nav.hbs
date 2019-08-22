@@ -1,5 +1,5 @@
 <nav class="site-nav">
-    <div class="site-nav-left">
+    <div class="site-nav-left menus">
         {{^is "home"}}
             {{#if @site.logo}}
                 <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
@@ -11,7 +11,7 @@
             {{navigation}}
         {{/if}}
     </div>
-    <div class="site-nav-right">
+    {{!-- <div class="site-nav-right">
         <div class="social-links">
             {{#if @site.facebook}}
                 <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
@@ -25,5 +25,5 @@
         {{else}}
             <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
         {{/if}}
-    </div>
+    </div> --}}
 </nav>

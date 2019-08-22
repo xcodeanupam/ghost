@@ -3,18 +3,20 @@
 
 {{#tag}}
 {{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
-    <div class="inner">
-        {{> "site-nav"}}
-        <div class="site-header-content">
+    <div class="">
+            <div class="site-header-content">
+    {{> "site-nav"}}
+    </div>
+    <div class="text-inner">
             <h1 class="site-title">{{name}}</h1>
-            <h2 class="site-description">
+            <h2 class="site-description-inner">
                 {{#if description}}
                     {{description}}
                 {{else}}
                     A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
                 {{/if}}
             </h2>
-        </div>
+    </div>
     </div>
 </header>
 {{/tag}}
