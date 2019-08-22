@@ -6,9 +6,12 @@
 
 
 {{> header background=cover_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
-    <div class="inner">
-        {{> "site-nav"}}
-        <div class="site-header-content">
+    <div class="site-header-content inner-page-menus">
+    {{> "site-nav"}}
+    </div>
+  
+    <div class="author-page ">
+        <div class="site-header-content author-content">
             {{#if profile_image}}
                 <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
             {{/if}}
