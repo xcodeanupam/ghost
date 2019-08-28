@@ -2711,7 +2711,7 @@ nav.site-nav {
   place-content: space-between;
 }
 header.site-header.outer.post-images-header {
-  padding: 10px 6pc 14px;
+  padding: 10px 0pc 14px;
   background: #0052af;
 }
 header.site-header.outer.post-images-header .site-nav-logo img {
