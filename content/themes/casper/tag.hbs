@@ -3,25 +3,28 @@
 
 {{#tag}}
 {{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
-       <div class="header-main">
+<div class="header-main">
 
     <div class="inner">
-  
-            <div class="site-header-content inner-page-menus">
-    {{> "site-nav"}}
+
+        <div class="site-header-content inner-page-menus">
+            {{> "site-nav"}}
+        </div>
     </div>
+</div>
+<div class="inner">
+
     <div class="text-inner">
-            <h1 class="site-title">{{name}}</h1>
-            <h2 class="site-description-inner">
-                {{#if description}}
-                    {{description}}
-                {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
-                {{/if}}
-            </h2>
+        <h1 class="site-title">{{name}}</h1>
+        <h2 class="site-description-inner">
+            {{#if description}}
+            {{description}}
+            {{else}}
+            A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+            {{/if}}
+        </h2>
     </div>
-    </div>
-    </div>
+</div>
 </header>
 {{/tag}}
 
@@ -30,8 +33,8 @@
     <div class="inner ">
         <div class="post-feed">
             {{#foreach posts}}
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
             {{/foreach}}
         </div>
     </div>
