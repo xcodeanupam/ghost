@@ -3,7 +3,10 @@
 
 {{#tag}}
 {{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
-    <div class="">
+       <div class="header-main">
+
+    <div class="inner">
+  
             <div class="site-header-content inner-page-menus">
     {{> "site-nav"}}
     </div>
@@ -16,6 +19,7 @@
                     A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
                 {{/if}}
             </h2>
+    </div>
     </div>
     </div>
 </header>
