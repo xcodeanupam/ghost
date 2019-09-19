@@ -7,7 +7,9 @@ into the {body} of the default.hbs template --}}
         <div class="site-header-content">
             <h1 class="site-title">
                 {{#if @site.logo}}
-                    <img href="https://bedrating.com" class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                <a  href="https://bedrating.com" >
+                    <img  class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                  </a>
                 {{else}}
                     {{@site.title}}
                 {{/if}}
